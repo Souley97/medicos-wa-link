@@ -61,14 +61,14 @@ const Services = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* En-tête */}
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-10'}`}>
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-full mb-6 shadow-lg">
+          <div className="inline-flex items-center gap-2  bg-primary  text-white px-6 py-3 rounded-full mb-6 shadow-lg">
             <Sparkles className="w-5 h-5" />
             <span className="font-medium">Services d'Excellence</span>
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Soins{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-600">
+            <span className="bg-clip-text text-transparent text-primary">
               Premium
             </span>
           </h2>
@@ -111,7 +111,7 @@ const Services = () => {
                 {/* Lien CTA */}
                 <button 
                   onClick={openWhatsApp}
-                  className="flex items-center gap-2 text-blue-600 font-semibold group-hover:text-blue-700 transition-colors"
+                  className="flex items-center gap-2 text-primary font-semibold group-hover:text-blue-700 transition-colors"
                 >
                   Prendre RDV
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
