@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const openWhatsApp = () => {
     const message = encodeURIComponent("Bonjour, je souhaiterais prendre un rendez-vous au Cabinet Médicos AR.");
-    window.open(`https://wa.me/221775234567?text=${message}`, '_blank');
+    window.open(`https://wa.me/221766657278?text=${message}`, '_blank');
   };
 
   const scrollToSection = (sectionId: string) => {

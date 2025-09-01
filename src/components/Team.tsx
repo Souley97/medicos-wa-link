@@ -3,7 +3,7 @@ import { GraduationCap, Award, Users } from "lucide-react";
 const Team = () => {
   const team = [
     {
-      name: "Dr. Amadou Diallo",
+      name: "Dr. Sarr",
       specialty: "Médecin Généraliste",
       experience: "15 ans d'expérience",
       description: "Spécialisé dans la médecine familiale et la prise en charge globale du patient.",
@@ -126,7 +126,7 @@ const Team = () => {
               <button 
                 onClick={() => {
                   const message = encodeURIComponent("Bonjour, j'aimerais en savoir plus sur votre équipe médicale.");
-                  window.open(`https://wa.me/221775234567?text=${message}`, '_blank');
+                  window.open(`https://wa.me/221766657278?text=${message}`, '_blank');
                 }}
                 className="whatsapp-button"
               >

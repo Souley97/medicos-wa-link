@@ -3,7 +3,7 @@ import { Stethoscope, MessageCircle, Phone, MapPin, Mail, Clock, Facebook, Insta
 const Footer = () => {
   const openWhatsApp = () => {
     const message = encodeURIComponent("Bonjour, je souhaiterais avoir des informations sur vos services.");
-    window.open(`https://wa.me/221775234567?text=${message}`, '_blank');
+    window.open(`https://wa.me/221766657278?text=${message}`, '_blank');
   };
 
   return (

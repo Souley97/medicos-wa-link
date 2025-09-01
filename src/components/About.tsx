@@ -128,7 +128,7 @@ const About = () => {
             <button 
               onClick={() => {
                 const message = encodeURIComponent("Bonjour, j'aimerais en savoir plus sur vos services médicaux.");
-                window.open(`https://wa.me/221775234567?text=${message}`, '_blank');
+                window.open(`https://wa.me/221766657278?text=${message}`, '_blank');
               }}
               className="whatsapp-button bg-white text-primary hover:bg-primary-light hover:text-white"
             >

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const Contact = () => {
   const openWhatsApp = () => {
     const message = encodeURIComponent("Bonjour, je souhaiterais prendre un rendez-vous au Cabinet Médicos AR.");
-    window.open(`https://wa.me/221775234567?text=${message}`, '_blank');
+    window.open(`https://wa.me/221766657278?text=${message}`, '_blank');
   };
 
   const openGoogleMaps = () => {
@@ -32,7 +32,7 @@ const Contact = () => {
       icon: <Phone className="w-8 h-8 text-accent-dark" />,
       title: "Téléphone",
       details: ["+221 77 523 45 67", "Urgences 24h/24"],
-      action: () => window.open('tel:+221775234567'),
+      action: () => window.open('tel:+221766657278'),
       actionText: "Appeler"
     },
     {
@@ -120,7 +120,7 @@ const Contact = () => {
                 key={index}
                 onClick={() => {
                   const encodedMessage = encodeURIComponent(message);
-                  window.open(`https://wa.me/221775234567?text=${encodedMessage}`, '_blank');
+                  window.open(`https://wa.me/221766657278?text=${encodedMessage}`, '_blank');
                 }}
                 className="bg-white/10 hover:bg-white/20 border border-white/30 rounded-lg p-4 text-left transition-all duration-300 hover:scale-105"
               >
@@ -182,7 +182,7 @@ const Contact = () => {
                   Pour les urgences vitales, contactez immédiatement les services d'urgence.
                 </p>
                 <Button 
-                  onClick={() => window.open('tel:+221775234567')}
+                  onClick={() => window.open('tel:+221766657278')}
                   variant="destructive"
                   className="w-full"
                 >
