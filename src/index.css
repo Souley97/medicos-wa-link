@@ -137,6 +137,13 @@ Mobile-first approach for Senegalese context
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+    /* Enhanced transitions */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   /* Professional medical typography */
   h1 {
     @apply text-4xl lg:text-6xl font-bold tracking-tight;
@@ -221,5 +228,39 @@ Mobile-first approach for Senegalese context
     .mobile-optimized {
       @apply text-base leading-normal;
     }
+  }
+
+  /* Section spacing and transitions */
+  section {
+    @apply transition-all duration-700 ease-out transform;
+  }
+
+  /* Intersection Observer animations */
+  @media (prefers-reduced-motion: no-preference) {
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    .animate-on-scroll.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Enhanced hover effects */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .hover-lift:hover {
+    @apply -translate-y-1 shadow-medium;
+  }
+
+  /* Parallax scroll effect */
+  .parallax {
+    transform: translateY(var(--scroll-y, 0));
+    transition: transform 0.1s ease-out;
   }
 }
